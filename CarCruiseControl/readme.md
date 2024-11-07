@@ -1,5 +1,12 @@
+Symulacja logiki fuzzy na przykładzie tempomatu w samochodzie. 
+Zaprogramowana logika programu zwraca użytkownikowi decyzję o przyspieszeniu, hamowaniu lub utrzymaniu prędkości w różnym natężeniu,
+w zależności od przekazanych warunków pogodowych, obecnej prędkości oraz dystansu od następnego pojazdu.
+
+W pliku main.py znajduje się funkcja uruchamiająca symulację, do której przekazać należy ilość sekund (sos),
+by określić czas trwania symulacji.
+
+
 # Skopiowanie repozytorium
-Sklonuj repozytorium na swoje lokalne urządzenie. W terminalu użyj poniższej komendy:
 
 ```bash
 git clone https://github.com/KarolSielski02/NAI-UNI.git
