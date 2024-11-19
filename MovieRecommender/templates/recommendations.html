@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Recommended Movies</h1>
+        <ul>
+            {% for movie in recommended %}
+            <li>
+                <h2>{{ movie.title }}</h2>
+                <p>{{ movie.overview }}</p>
+                <p>Release Date: {{ movie.release_date }}</p>
+                <p>Rating: {{ movie.rating }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+        <h1>Anti-Recommended Movies</h1>
+        <ul>
+            {% for movie in anti_recommended %}
+            <li>
+                <h2>{{ movie.title }}</h2>
+                <p>{{ movie.overview }}</p>
+                <p>Release Date: {{ movie.release_date }}</p>
+                <p>Rating: {{ movie.rating }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('index') }}">Go Back</a>
+    </div>
+</body>
+</html>
