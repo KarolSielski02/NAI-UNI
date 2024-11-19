@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from recommendation import recommend_movies
 from tmdb_api import get_movie_details, format_details
 from normalize_data import load_and_normalize_data
+import json
 
 app = Flask(__name__)
 
@@ -27,6 +28,10 @@ def recommend():
 
     # Add user ratings to the dataset
     data[user_name] = user_ratings_dict
+
+    # Save the updated dataset to the JSON file
+    with open('movie_ratings.json', 'w') as f:
+        json.dump(data, f, indent=4)
 
     # Get recommendations
     recommended_movies, anti_recommended_movies = recommend_movies(user_name, data)

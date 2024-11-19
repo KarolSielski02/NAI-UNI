@@ -1,10 +1,14 @@
+import os
 import requests
+from dotenv import load_dotenv
 
-TMDB_API_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMGE3NDU2MWNhYzQzZDBhMmEwNWU5MDhmYmEzMTRlMCIsIm5iZiI6MTczMTkzOTU4Mi45NTExOTk1LCJzdWIiOiI2NzM3NDE5NzI5NTRkMjY0NzYyNWIwNzgiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.odNUHab-XRxMs6suLjDXM4eFcU2DcJYT_fefkHQYqGc'
+load_dotenv()
+
+TMDB_API_KEY = os.getenv("TMDB_TOKEN")
 
 
 def get_movie_details(movie_title):
-    def fetch_details(path, language='en'):
+    def fetch_details(path, language='pl'):
         url = f"https://api.themoviedb.org/3/search/{path}?query={movie_title}&include_adult=false&language={language}&page=1"
         headers = {
             "accept": "application/json",
