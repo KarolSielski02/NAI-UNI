@@ -4,6 +4,10 @@ import numpy as np
 import skfuzzy as fuzz
 from skfuzzy import control as ctrl
 
+"""
+Authors: Karol Sielski, Tomasz Wasielewski
+"""
+
 
 def map_acceleration_to_string(acceleration_value):
     """
