@@ -6,7 +6,7 @@ listy użytkowników podobnych do użytkownika docelowego, sprawdza, które film
 nie zostały jeszcze obejrzane przez użytkownika docelowego. Na tej podstawie generuje rekomendacje.
 
 Program określa poziom podobieństwa między użytkownikiem docelowym a innymi użytkownikami
-na podstawie ich ocen. Używa metryk odległość euklidesowa i korelacja Pearsona
+na podstawie ich ocen. Używa metryk odległośći euklidesowej i korelacja Pearsona
 
 # Zostały przygotowane dwa pliki które przedstawiają działanie progranu na dwa sposoby:
 
