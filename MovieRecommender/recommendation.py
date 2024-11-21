@@ -56,7 +56,7 @@ def recommend_movies(target_user, data, num_recommendations=5, num_anti_recommen
             - anti_recommended_movies (list): Lista `num_anti_recommendations` filmów, których warto unikać.
     """
     similar_users = get_similar_users(target_user, data)
-    print(f"Similar Users: {similar_users}")  # Debug print
+    print(f"Similar Users: {similar_users}")
 
     recommended_movies = []
     anti_recommended_movies = []
@@ -75,7 +75,7 @@ def recommend_movies(target_user, data, num_recommendations=5, num_anti_recommen
         if len(recommended_movies) >= num_recommendations and len(anti_recommended_movies) >= num_anti_recommendations:
             break
 
-    print(f"Recommended Movies: {recommended_movies}")  # Debug print
-    print(f"Anti-Recommended Movies: {anti_recommended_movies}")  # Debug print
+    print(f"Recommended Movies: {recommended_movies}")
+    print(f"Anti-Recommended Movies: {anti_recommended_movies}")
 
     return recommended_movies, anti_recommended_movies

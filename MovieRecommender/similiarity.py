@@ -38,7 +38,7 @@ def pearson_correlation(user1, user2):
                Jeśli użytkownicy nie mają wspólnych filmów, zwraca 0.
     """
     common_movies = set(user1.keys()).intersection(set(user2.keys()))
-    if not common_movies:
+    if len(common_movies) < 2:
         return 0
     ratings1 = [user1[movie] for movie in common_movies]
     ratings2 = [user2[movie] for movie in common_movies]
