@@ -94,12 +94,16 @@ lub jeśli nie działa
 python3 [main.py / app.py]
 ```
 # Przykład 1 - Karol Sielski
+![image](https://github.com/user-attachments/assets/cdaa883f-4ce8-4498-a0ea-76e3df624229)
+![image](https://github.com/user-attachments/assets/60ff3527-a80f-4d05-a889-ac87bca44a48)
 
 # Przykład 2 - Tomasz Wasielewski
+![image](https://github.com/user-attachments/assets/f71bf3d4-744a-40e9-bf19-51177465765f)
+![image](https://github.com/user-attachments/assets/63def19b-8b12-4a86-bfef-9815fb54d18b)
 
 # Przykład 3 - Sandra Homel
-
-
+![image](https://github.com/user-attachments/assets/4086668f-fc5b-468f-a40c-e5a67bfed797)
+![image](https://github.com/user-attachments/assets/4d43409d-3e22-4db0-a0a3-fff6f5fe80a4)
 
 
 
