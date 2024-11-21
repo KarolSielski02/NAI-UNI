@@ -105,6 +105,11 @@ python3 [main.py / app.py]
 ![image](https://github.com/user-attachments/assets/4086668f-fc5b-468f-a40c-e5a67bfed797)
 ![image](https://github.com/user-attachments/assets/4d43409d-3e22-4db0-a0a3-fff6f5fe80a4)
 
+# Przykład pliku movie_ratings.json po wykonaniu przykładów
+![image](https://github.com/user-attachments/assets/50f7fb30-2317-45fe-ac0c-4f25645ece03)
+![image](https://github.com/user-attachments/assets/022f7259-0562-46d3-8484-7befa20126bc)
+
+
 
 
 
