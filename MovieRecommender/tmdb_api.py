@@ -8,7 +8,34 @@ TMDB_API_KEY = os.getenv("TMDB_TOKEN")
 
 
 def get_movie_details(movie_title):
+    """
+    Pobiera szczegóły dotyczące filmu lub serialu na podstawie tytułu, korzystając z API TMDB.
+
+    Funkcja najpierw wyszukuje dane jako film, a jeśli nie znajdzie wyników,
+    ponawia próbę jako serial telewizyjny.
+
+    Parametry:
+        movie_title (str): Tytuł filmu lub serialu do wyszukania.
+
+    Zwraca:
+        tuple: Krotka zawierająca:
+            - szczegóły filmu/serialu (dict) lub None, jeśli nie znaleziono wyników,
+            - ścieżkę ('movie' lub 'tv'), określającą typ wyniku (film lub serial),
+              lub None, jeśli nie znaleziono wyników.
+    """
     def fetch_details(path, language='pl'):
+        """
+        Pomocnicza funkcja do wykonania żądania API TMDB dla określonej ścieżki.
+
+        Parametry:
+            path (str): Ścieżka w API określająca, czy wyszukiwać filmy ('movie') czy seriale ('tv').
+            language (str): Kod języka do wyników wyszukiwania (domyślnie 'pl').
+
+        Zwraca:
+            tuple: Krotka zawierająca:
+                - szczegóły pierwszego wyniku wyszukiwania (dict) lub None, jeśli brak wyników,
+                - ścieżkę ('movie' lub 'tv') lub None, jeśli brak wyników.
+        """
         url = f"https://api.themoviedb.org/3/search/{path}?query={movie_title}&include_adult=false&language={language}&page=1"
         headers = {
             "accept": "application/json",
@@ -31,6 +58,21 @@ def get_movie_details(movie_title):
 
 
 def format_details(details, path):
+    """
+    Formatuje szczegóły filmu lub serialu do ujednoliconego słownika.
+
+    Parametry:
+        details (dict): Słownik zawierający szczegóły filmu lub serialu zwrócone przez API TMDB.
+        path (str): Ścieżka określająca typ wyniku ('movie' dla filmu, 'tv' dla serialu).
+
+    Zwraca:
+        dict: Sformatowany słownik zawierający szczegóły filmu lub serialu:
+            - 'title': Tytuł filmu/serialu.
+            - 'overview': Opis filmu/serialu.
+            - 'release_date': Data premiery.
+            - 'rating': Średnia ocena.
+        Jeśli typ wyniku nie jest rozpoznany, zwraca None.
+    """
     if path == 'movie':
         return {
             'title': details.get('title', 'N/A'),

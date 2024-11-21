@@ -8,6 +8,16 @@ data = load_and_normalize_data('movie_ratings.json')
 
 
 def print_movie_details(movies):
+    """
+   Wyświetla szczegóły dla podanej listy tytułów filmów lub seriali,
+   korzystając z API TMDB do pobrania informacji.
+
+   Parametry:
+       movies (list): Lista tytułów filmów lub seriali.
+
+   Zwraca:
+       None
+   """
     for movie in movies:
         details, path = get_movie_details(movie)
         if details:
