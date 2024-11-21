@@ -6,7 +6,7 @@ listy użytkowników podobnych do użytkownika docelowego, sprawdza, które film
 nie zostały jeszcze obejrzane przez użytkownika docelowego. Na tej podstawie generuje rekomendacje.
 
 Program określa poziom podobieństwa między użytkownikiem docelowym a innymi użytkownikami
-na podstawie ich ocen. Używa metryk odległośći euklidesowej i korelacja Pearsona
+na podstawie ich ocen. Używa metryk odległośći euklidesowej lub korelacja Pearsona
 
 # Zostały przygotowane dwa pliki które przedstawiają działanie progranu na dwa sposoby:
 
@@ -15,7 +15,7 @@ z calle'm do TMDB. Wynik printowany jest w konsoli.
 
 **app.py** - Prosta lokalna aplikacja webowa w której możemy wprowadzić swojego użytkownika jak i podać własne
 propozycje włącznie z jej oceną i na podstawie tych rekomendacji zostaną nam dobrane filmy,
-a wyniki zostaną nam wyświetlone na stronie, a nasze rekomendacje zapisze do lokalnego pliku movie_ratings.json . Opisy są zapewnione przez stronę
+a wyniki zostaną nam wyświetlone na stronie. Nasze rekomendacje zapisze do lokalnego pliku movie_ratings.json . Opisy są zapewnione przez stronę
 TMDB. 
 
 Po odpaleniu w konsoli powinien wyświetlić nam się link do strony. Natywnie jest to http://127.0.0.1:5000
