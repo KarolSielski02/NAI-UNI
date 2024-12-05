@@ -18,7 +18,7 @@ propozycje włącznie z jej oceną i na podstawie tych rekomendacji zostaną nam
 a wyniki zostaną nam wyświetlone na stronie. Nasze rekomendacje zapisze do lokalnego pliku movie_ratings.json . Opisy są zapewnione przez stronę
 TMDB. 
 
-Po odpaleniu w konsoli powinien wyświetlić nam się link do strony. Natywnie jest to http://127.0.0.1:5000
+Po odpaleniu w konsoli powinien wyświetlić nam się link do strony. Defaultowo jest to http://127.0.0.1:5000
 
 
 # Integracja z TMDB
