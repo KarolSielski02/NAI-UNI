@@ -34,3 +34,5 @@ python main.py
 
 <img width="412" alt="{BC4EC28B-53A7-4254-85FC-833CB6BCB9CA}" src="https://github.com/user-attachments/assets/9ac839f6-81a2-4872-abd5-66393cd58dcf">
 <img width="477" alt="{8B34254B-9F57-44C4-96EB-E39130B1847E}" src="https://github.com/user-attachments/assets/2f35b467-6880-4559-8e84-8b4bf59093c2">
+
+<img width="462" alt="{3B5114AC-FFCF-4797-9035-867A7F7EB7B6}" src="https://github.com/user-attachments/assets/25ce1074-4a7c-478b-8f23-07919db3f30d">
