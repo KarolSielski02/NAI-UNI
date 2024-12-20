@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.12 (GameOfKnights)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (CarCruiseControl)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (NAI-UNI)" project-jdk-type="Python SDK" />
 </project>
