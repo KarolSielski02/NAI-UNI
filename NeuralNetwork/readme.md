@@ -87,17 +87,19 @@ potencjalnie przewyższyć SVM.
 
 
 # Wywołanie SVM i DT dla danych sonarowych:
-![img_1.png](img_1.png)
+<img width="389" alt="{3CE729C8-C9F6-45B0-A00D-BA76A44AB3B4}" src="https://github.com/user-attachments/assets/0377a824-3918-46b1-9ff9-cf7f401b21f1" />
+<img width="488" alt="{D99D8E49-F0AC-4B1B-B6C0-0D9E71E15170}" src="https://github.com/user-attachments/assets/d609650f-21c8-44ff-bd12-7779d304f6f0" />
 
 # Wywołanie NN dla danych sonarowych:
-![img_2.png](img_2.png)
+<img width="719" alt="{FC44C41D-882F-471E-9B0C-827AAD9D4B50}" src="https://github.com/user-attachments/assets/d1877fe5-7dcb-4982-b95e-5cd607137119" />
 
 # Uczenie modelu małej i dużej sieci:
 ![img_3.png](img_3.png)
 ![img_4.png](img_4.png)
 
 # Wyniki predykcji dla modelu małej i dużej sieci:
-![img_5.png](img_5.png)
+<img width="703" alt="{2126DAB4-5673-4A8A-BC9E-552C3E023BC6}" src="https://github.com/user-attachments/assets/1a84dc56-ff2d-48c8-b122-9a2227abed7f" />
+<img width="341" alt="{FDCFFB0A-ABCB-4824-A28B-B5DCC502040D}" src="https://github.com/user-attachments/assets/36c35cd8-1c32-4c76-8d66-f7fe9ff1edc8" />
 
 Rozmiar i głębokość sieci nie mają znaczącego wpływu na wynik przy tak małej skali klasyfikacji i różnorodności dancyh.
 
