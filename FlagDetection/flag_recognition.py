@@ -2,6 +2,33 @@ import cv2
 import numpy as np
 from tensorflow.keras.models import load_model
 
+"""
+Flag Recognition Script
+
+Authors: Tomasz Wasielewski, Karol Sielski
+
+This script captures video from the camera, detects a flag in the frame, and classifies it as Polish, Russian, or 
+Ukrainian using a pre-trained deep learning model. The detected flag region is highlighted with a bounding box, and the 
+predicted label is displayed on the frame.
+
+Steps:
+1. Load the pre-trained flag recognition model.
+2. Define the labels for the classification.
+3. Define a function to preprocess the frame for prediction.
+4. Define a dummy function to get the bounding box of the flag (for demonstration purposes).
+5. Capture video from the camera.
+6. For each frame:
+   a. Get the bounding box of the flag.
+   b. Crop the flag region from the frame.
+   c. Preprocess the flag region.
+   d. Predict the flag using the pre-trained model.
+   e. Draw a bounding box around the detected flag.
+   f. Display the predicted label on the frame.
+   g. Show the frame.
+   h. Break the loop on 'q' key press.
+7. Release the video capture and close the window.
+"""
+
 # Load the pre-trained model
 model = load_model('flag_recognition_model.keras')
 
