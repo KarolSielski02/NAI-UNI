@@ -1,6 +1,9 @@
 
 # Flag Recognition Project
 
+## Authors:
+Tomasz Wasielewski, Karol Sielski
+
 This project is designed to recognize flags of three different countries: Polish, Russian, and Ukrainian. It uses a 
 convolutional neural network (CNN) to classify images of flags. The project includes scripts for training the model and 
 for real-time flag recognition using a webcam.
@@ -55,6 +58,4 @@ python predict_flags.py
 ```
 This script will capture video from your webcam, detect flags in the video frames, and display the predicted flag labels in real-time.
 
-Authors
-Tomasz Wasielewski, Karol Sielski
 ![ezgif-7-b1b7dbc610.gif](ezgif-7-b1b7dbc610.gif)
