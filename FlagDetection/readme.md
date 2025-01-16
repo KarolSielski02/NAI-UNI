@@ -55,7 +55,10 @@ python predict_flags.py
 ```
 This script will capture video from your webcam, detect flags in the video frames, and display the predicted flag labels in real-time.
 
-Authors
-[Tomasz Wasielewski, Karol Sielski]
+Authors:
+Tomasz Wasielewski, Karol Sielski
 
-[Flag Recognition 2025-01-16 22-42-03.mp4](..%2F..%2F..%2FVideos%2FCaptures%2FFlag%20Recognition%202025-01-16%2022-42-03.mp4)
+
+<video width="320" height="240" controls>
+  <source src="Flag Recognition 2025-01-16 22-42-03.mp4" type="video/mp4">
+</video>
